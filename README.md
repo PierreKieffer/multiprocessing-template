@@ -17,7 +17,6 @@ Returns the result when all task are finished.
 	* [AsyncWorker](#asyncworker)
 		* [Stream runner](#stream-runner)
 		* [Standard runner](#standard-runner)
-	* [Worker (! deprecated, refer to AsyncWorker !)](#worker-deprecated-refer-to-asyncworker-)
 
 
 ## Install 
