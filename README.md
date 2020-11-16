@@ -74,7 +74,7 @@ if __name__=="__main__":
     '''
     Init
     '''
-    async_worker = AsyncWorker(2)
+    async_worker = AsyncWorker(2) # number of workers as param, (max = os.cpu_count())
 
     '''
     Add methods and params to worker
@@ -121,7 +121,7 @@ def f_3(**kwargs):
     '''
     Init worker
     '''
-    async_worker = AsyncWorker(4)
+    async_worker = AsyncWorker(4) # number of workers as param, (max = os.cpu_count())
 
     '''
     Add methods and params to worker
