@@ -1,7 +1,7 @@
 # multiprocessing-template 
 Provides parallel and async execution of multiple methods, and processing of results in real time.
 
-`AsyncWorker` provides two runners : 
+`AsyncWorker` provides two types of runners : 
 Both runners init and run a pool of async tasks (same / different ones) in parallel. 
 
 - stream runner : 
@@ -133,41 +133,5 @@ def f_3(**kwargs):
     async_worker.add(f_3, {"arg" : "foobar"})
 
     output = async_worker.run()
-```
-
-
-### Worker (! deprecated, refer to AsyncWorker !)
-Worker allows parallel execution of the same method for several configurations
-
-- Import 
-
-```python
-from multiprocessing_template.template import Worker
-```
-- Method example 
-```python
-def method(**kwargs) : 
-        print("arg_1 = {}".format(kwargs.get("arg_1")))
-        print("arg_2 = {}".format(kwargs.get("arg_2")))
-```
-
-- Worker
-```python
-if __name__=="__main__": 
-
-    '''
-    Init configuration for each process and init input_configuration tuple 
-    '''
-    conf_1 = {"arg_1" : 10, "arg_2" : "foo"}
-    conf_2 = {"arg_1" : 20, "arg_2" : "bar"}
-         
-    input_configuration = (conf_1, conf_2)
-
-    '''
-    Init Worker(number of processes, input_method, input_configuration)
-    '''
-    worker= Worker(2, method, input_configuration)
-    worker.run()
-
 ```
 
