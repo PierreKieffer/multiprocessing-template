@@ -1,5 +1,7 @@
 # multiprocessing-template 
-<center><img src="logo.png" ...></center>
+<p align="center">
+  <img width="460" height="300" src="logo.png">
+</p>
 
 
 Provides parallel and async execution of multiple methods, and processing of results in real time.
