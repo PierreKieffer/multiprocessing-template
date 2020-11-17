@@ -1,5 +1,7 @@
 # multiprocessing-template 
-![](logo.png)
+![](logo.png =20x)
+
+
 Provides parallel and async execution of multiple methods, and processing of results in real time.
 
 `AsyncWorker` provides two types of runners : 
