@@ -1,7 +1,5 @@
 # multiprocessing-template 
-<!-- ![](logo.png) -->
-![](logo.png)
-<center><img src="logo.png"></center>
+<center><img src="logo.png" ...></center>
 
 
 Provides parallel and async execution of multiple methods, and processing of results in real time.
