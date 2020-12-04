@@ -71,7 +71,11 @@ def f_2(arg1 = "default_value", arg2 = "default_value"):
 ```python
 def consumer(data): 
     print("consumed data : {}".format(data))
-```
+
+    # Example : Write to file concurrently
+    with open("data.txt", "a") as f : 
+        f.write("\n")
+        f.write(data)```
 
 ```python 
 if __name__=="__main__":
