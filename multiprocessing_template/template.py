@@ -74,8 +74,8 @@ class AsyncWorker:
                     consumer(pool_task_output.get())
                     self.output_buffer.append(pool_task_output.get())
                     pool_output_buffer.remove(pool_task_output)
-        p.close()
-        p.join()
+# p.close()
+# p.join()
 
 
 '''
